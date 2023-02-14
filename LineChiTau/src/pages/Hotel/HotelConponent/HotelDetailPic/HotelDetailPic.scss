@@ -1,0 +1,31 @@
+@import '../../../../css/global-style.scss';
+
+.Hotel-Detail-Pic {
+  background: #fff;
+  cursor: pointer;
+  width: 1320px;
+
+  .left-side {
+    padding-left: 26px;
+
+    .main-pic-box {
+      width: 850px;
+      height: 570px;
+
+      .main-pic {
+        width: 850px;
+        height: 580px;
+      }
+    }
+  }
+
+  .vice-pic-box {
+    width: 420px;
+    height: 282px;
+
+    .vice-pic {
+      width: 420px;
+      height: 282px;
+    }
+  }
+}

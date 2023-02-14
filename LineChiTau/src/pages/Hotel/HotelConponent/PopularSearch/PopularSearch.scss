@@ -1,0 +1,16 @@
+@import '../../../../css/global-style.scss';
+
+.popular-search {
+  width: 1440px;
+  background-color: #fff;
+}
+li {
+  .search-tag {
+    border: 1px solid $textColor;
+    background-color: transparent;
+  }
+  .search-tag:hover {
+    background-color: #ffb905;
+    color: $textColor;
+  }
+}

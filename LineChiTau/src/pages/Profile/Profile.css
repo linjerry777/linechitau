@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700,600|Stick:400|Nunito+Sans:400,700,600,900|Poppins:400,700|Inter:400,700,500,600|Roboto:400,300,700,600");
+@font-face {
+  font-family: "Microsoft JhengHei-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.animaapp.com/MicrosoftJhengHei-Regular") format("truetype");
+}
+@font-face {
+  font-family: "Microsoft JhengHei-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/MicrosoftJhengHei-Bold") format("truetype");
+}
+
+
+
+.profile {
+  align-items: center;
+  background-color: var(--white);
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  margin: 10px 0;
+  /* justify-content: center; */
+  min-height: 1026px;
+  /* min-width: 1920px; */
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  align-items: flex-start;
+  display: flex;
+  gap: 62px;
+  justify-content: center;
+  width: 1440px;
+}
+@media (max-width: 390px) {
+  
+.profile {
+  align-items: center;
+  background-color: var(--white);
+  border: 0px none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: auto;
+  margin: 10px 0;
+  /* justify-content: center; */
+  min-height: 1026px;
+  /* min-width: 1920px; */
+  position: relative;
+  width: 100%;
+}
+.main {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  justify-content: center;
+  width: 390px;
+}
+}
+

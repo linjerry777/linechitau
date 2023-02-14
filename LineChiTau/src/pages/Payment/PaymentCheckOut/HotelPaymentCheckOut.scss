@@ -1,0 +1,111 @@
+@import '../layout/payment.scss';
+
+/* 購物車清單 */
+    .item-section{
+        background: $secondary;
+        border-radius: $my-border-radius;
+        padding: 30px 40px;
+    }
+    .item{
+        background: #fff;
+        border-radius: $my-border-radius;
+    }
+    .item-image{
+        border-radius: $my-border-radius;
+    }
+    
+/* 聯絡資料 */
+.contact-user-btn{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+    /* border: 1px solid $textColor; */
+}
+/* 折扣 */
+.use-coupon-btn{
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+/* 同意條款 */
+.rule-section{
+        border-radius: $my-border-radius;
+        
+}
+/* 小計清單 */
+.sub-list{
+position: relative;
+
+}
+.sub-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.sub-detail{
+    background: #fff;
+    border-radius: $my-border-radius;
+
+}
+.sub-price{
+    background: $secondaryTwo;
+    padding: 8px 15px;
+    border-radius: $my-border-radius;
+}
+/* total */
+.topay a{
+    color: $textColor;
+}
+/* 住房資訊 */
+.order-info{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.order-info-detail{
+    background: #fff;
+}
+.room-info{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.tag{
+    background: $main;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+/* 個人資料 */
+.profile-form{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.profile-form label{
+    margin-bottom: .5rem;
+}
+/* 特殊需求 */
+.memo-form{
+    background: $secondary;
+    border-radius: $my-border-radius;
+
+}
+/* 抵達時間 */
+.arrive-time-data{
+    background: $secondaryTwo;
+    border-radius: $my-border-radius;
+}
+/* 付款方式 */
+.payment-chosen-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+    height: 100%;
+}
+.payment-detail{
+    background: $secondary ;
+    border-radius: $my-border-radius;
+}
+.credit-card-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}

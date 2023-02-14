@@ -1,0 +1,10 @@
+.pay-order{
+    width: 960px;
+    text-align: center;
+}
+@media (max-width: 390px)  {
+    .pay-order{
+        width: 390px;
+        text-align: center;
+    }
+}

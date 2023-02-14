@@ -1,0 +1,40 @@
+@import "../../../../../css/global-style.scss";
+
+$general:10px;
+
+//定義兩區的寬度
+.profile-wrapper {
+  flex: 0 0 150px;
+  padding-top: $general * 2;
+}
+.content-wrapper {
+  flex-grow:1;
+  padding-top: $general * 2;
+}
+
+//設定大頭貼圓圈大小
+.profile-container {
+
+  width: 72px;;
+  height: 72px;
+  border-radius: 60px;
+  overflow: hidden;
+  .profile-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//設定上傳者圖片
+.picture-container {
+  width: 100%; 
+    .picture {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    .picture+.picture {
+      margin-left: $general;
+    }
+}

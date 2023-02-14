@@ -1,0 +1,32 @@
+@import '../../../../css/global-style.scss';
+
+.hotel-list-map {
+  max-width: 250px;
+  height: 200px;
+  background-color: #aaa;
+  .leaflet-hotel-list {
+    z-index: 499;
+  }
+  .map-btn {
+    border: none;
+    background: $main;
+    top: 40%;
+    left: 33%;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 500;
+  }
+}
+.location-type-box {
+  border: 1px solid $textColor;
+  max-width: 250px;
+  .filter-box-title {
+    border-bottom: 2px solid $textColor;
+    padding-bottom: 5px;
+  }
+  .arrow-right {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 40px;
+    color: $textColor;
+  }
+}

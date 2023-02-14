@@ -1,0 +1,136 @@
+// 預設變數覆蓋需要在導入Bootstrap之前
+
+/* 顏色 */
+
+$main: #ffb905;
+$secondary: #fcfaf2;
+$textColor: #734338;
+$hoverColor: #ff9b05;
+/* hover-text用BS5的light */
+/* 錯誤訊息用BS5的danger */
+/* 成功訊息用BS5的success */
+/*字體大小*/
+$fs-1: 56px;
+$fs-2: 42px;
+$fs-3: 32px;
+$fs-4: 24px;
+$fs-5: 20px;
+$fs-6: 18px;
+$p: 16px;
+$p-small: 12px;
+
+// 導入Bootstrap
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'material-symbols';
+
+// 其它要導入覆蓋掉原本的預設bootstrap樣式要放在這下面
+// https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: $textColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 字型、字體大小 */
+.my-banner {
+  font-size: $fs-1;
+  color: $textColor;
+}
+
+.my-topic {
+  font-size: $fs-2;
+  color: $textColor;
+}
+
+.h3 {
+  font-size: $fs-3;
+  color: $textColor;
+}
+
+.my-heading {
+  font-size: $fs-4;
+  color: $textColor;
+}
+
+.nav-foot {
+  font-size: $fs-5;
+  color: $textColor;
+}
+
+.nav-foot-small {
+  font-size: $fs-6;
+  color: $textColor;
+}
+
+.my-p {
+  font-size: $p;
+  color: $textColor;
+}
+
+.my-p-small {
+  font-size: $p-small;
+  color: $textColor;
+}
+
+/* Effect */
+.my-border-radius {
+  border-radius: 10px;
+}
+
+/* 元件 */
+.my-btn {
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: $main;
+  border: 0;
+}
+
+.my-filled-btn {
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  background: $main;
+}
+
+.products-card {
+  max-width: 900px;
+  height: 250px;
+  border: 1px solid $textColor;
+  padding: 20px;
+}
+
+.service-tag {
+  padding: 10px 40px;
+}
+
+.icon {
+  height: 30px;
+}
+
+.icon-small {
+  height: 16px;
+}
+
+.small-card {
+  width: 260px;
+  height: 350px;
+  padding: 20px;
+  border: 1px solid $textColor;
+}
+
+/* 商品頁專用 */
+.title-underline {
+  padding: 0px;
+  background: linear-gradient(to bottom, transparent 75%, $main 75%);
+}
+
+.bg-color {
+  background-color: $secondary;
+}

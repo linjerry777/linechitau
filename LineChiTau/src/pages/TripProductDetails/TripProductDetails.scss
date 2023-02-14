@@ -1,0 +1,114 @@
+@use 'sass:math';
+@import '../../css/global-style.scss';
+
+h1,h2,h3,h4,h5,h6,p,div {
+    color:$textColor;
+}
+
+@mixin unfilled-google-icons{
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+@mixin filled-google-icons {
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+.service,.round-btn {
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid $textColor;
+
+    &.service + .service {
+        margin-left: 10px;
+    }
+}
+
+
+.material-symbols-outlined {
+    @include unfilled-google-icons();
+} 
+
+.material-symbols-outlined.address {
+    @include filled-google-icons();
+    margin-right : 10px;
+}
+
+$sqrt2:math.sqrt(2);
+$pseudoLength:calc(40 * $sqrt2);
+
+.main-selector {
+    border: 1px solid $textColor;
+    border-radius: 10px;
+    padding-inline: 50px;
+    padding-block: 45px;
+    width: 856px;
+    position: relative;
+    
+    &::after {
+        content:"";
+        position:absolute;
+        width: calc($pseudoLength *1px);
+        height: calc($pseudoLength *1px);
+        transform: rotate(45deg);
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+        right:-70.5px;
+        top:30px;
+        background-color: $textColor;
+    }
+}
+
+
+.plan-details {
+    border: 1px solid $textColor;
+    border-radius: 10px;
+    padding-inline: 50px;
+    padding-block: 45px;
+    width: 400px;
+}
+
+
+.box-title {
+    display: block;
+    max-width: fit-content;
+}
+
+//暫時先用hover代替 state，
+.material-symbols-outlined.show-btn {
+    @include filled-google-icons();
+    transform: scale(1,-1);
+    &:active {
+        transform: none;
+    }
+    &.my-p {
+        font-size :22px;
+    }
+}
+
+.collapse-details {
+    display: none;
+}
+
+.details-container {
+    &:hover + .collapse-details {
+        display: block;
+    }
+}
+
+.preserved-amount {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid $textColor;
+}
+
+.collapsable-block {
+    
+    border: 1px solid $textColor;
+    border-radius: 10px;
+    padding-inline: 50px;
+    padding-block: 45px;
+    width: 856px;
+    
+}

@@ -1,0 +1,86 @@
+@import '../../../css/global-style.scss';
+
+.recommend-to-jerry {
+  max-width: 1440px;
+  .card-pic {
+    width: 220px;
+    height: 160px;
+  }
+  .text-hide {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 24px;
+  }
+  .link {
+    color: $textColor;
+  }
+  .card-hover {
+    transition: 0.5s;
+    transform: translateY(-48px);
+    width: 260px;
+    background: $main;
+    border-radius: 0 0 10px 10px;
+    .link {
+      color: $textColor;
+    }
+  }
+  .hover-area:hover .card-hover {
+    display: flex;
+    transform: translateY(0px);
+    width: 260px;
+    background: $main;
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media (max-width: 390px) {
+  .recommend-to-jerry {
+    max-width: 390px;
+    .jerry-title {
+      margin-left: 133px;
+     
+    }
+    .jerry-card {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-pic {
+      width: 220px;
+      height: 160px;
+    }
+    .text-hide {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+      font-size: 24px;
+    }
+    .link {
+      color: $textColor;
+    }
+    .card-hover {
+      transition: 0.5s;
+      transform: translateY(-48px);
+      width: 260px;
+      background: $main;
+      border-radius: 0 0 10px 10px;
+      .link {
+        color: $textColor;
+      }
+    }
+    .hover-area:hover .card-hover {
+      display: flex;
+      transform: translateY(0px);
+      width: 260px;
+      background: $main;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../css/global-style.scss';
+.page{
+    text-align: center;
+}
+
+.pagenation-border:hover {
+    background: $main;
+  }
+  .active{
+    background: $main;
+
+  }
+  .pagenation-border {
+    border-left: 1px solid $textColor;
+    border-top: 1px solid $textColor;
+    border-bottom: 1px solid $textColor;
+  }

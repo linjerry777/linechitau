@@ -1,0 +1,45 @@
+@import "../../../../css/global-style.scss";
+
+.area {
+  padding-left: 10px;
+  &:hover {
+    background-color: $main;
+  }
+}
+
+.arrow-right {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  font-size: 40px;
+  color: $textColor;
+}
+
+.counties-wrapper {
+  width:125px;
+  padding-block: 10px;
+  border:2px solid $textColor;
+  left:calc(14rem - 5px);
+  top:0;
+  background: white;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &::before {
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-color: $textColor;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    position: absolute;
+    left:-20px;
+    top:10px;
+  }
+
+  .keyword-select {
+    &:hover {
+      background-color: $main;
+    }
+  }
+}

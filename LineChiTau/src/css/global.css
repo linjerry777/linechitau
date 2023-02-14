@@ -1,0 +1,905 @@
+:root {
+    --black2: 
+  rgba(0, 0, 0, 1);
+    --magic-potion: 
+  rgba(0, 17, 70, 1);
+    --cod-gray: 
+  rgba(12, 12, 12, 1);
+    --persian-blue: 
+  rgba(22, 62, 212, 1);
+    --steel-gray: 
+  rgba(28, 31, 55, 1);
+    --jelly-bean: 
+  rgba(35, 126, 168, 1);
+    --mine-shaft-2: 
+  rgba(47, 47, 47, 1);
+    --denim: 
+  rgba(47, 116, 197, 1);
+    --mine-shaft2: 
+  rgba(48, 48, 48, 1);
+    --blue: 
+  rgba(66, 0, 255, 0.051);
+    --ocean-blue-pearl: 
+  rgba(69, 52, 204, 1);
+    --chicago: 
+  rgba(94, 94, 94, 1);
+    --dove-gray: 
+  rgba(106, 106, 106, 1);
+    --electric-violet: 
+  rgba(110, 0, 255, 1);
+    --dove-gray-2: 
+  rgba(111, 111, 111, 1);
+    --old-copper: 
+  rgba(115, 67, 56, 1);
+    --concord: 
+  rgba(124, 124, 124, 1);
+    --falcon-2: 
+  rgba(126, 95, 100, 1);
+    --falcon: 
+  rgba(126, 95, 101, 1);
+    --gray: 
+  rgba(127, 127, 127, 1);
+    --bali-hai: 
+  rgba(139, 148, 178, 1);
+    --sepia: 
+  rgba(162, 104, 81, 1);
+    --regent-st-blue: 
+  rgba(170, 216, 237, 1);
+    --silver-chalice: 
+  rgba(174, 174, 174, 1);
+    --cloud: 
+  rgba(198, 198, 198, 1);
+    --pumice: 
+  rgba(202, 202, 202, 1);
+    --hawkes-blue: 
+  rgba(213, 222, 255, 1);
+    --alto: 
+  rgba(217, 217, 217, 1);
+    --beryl-green: 
+  rgba(224, 237, 197, 1);
+    --snow-flurry: 
+  rgba(225, 255, 218, 1);
+    --mercury: 
+  rgba(230, 230, 230, 1);
+    --mercury-2: 
+  rgba(231, 231, 231, 1);
+    --seashell: 
+  rgba(241, 241, 241, 1);
+    --concrete: 
+  rgba(242, 242, 242, 1);
+    --bianca: 
+  rgba(252, 250, 242, 1);
+    --pippin: 
+  rgba(254, 223, 225, 1);
+    --gold: 
+  rgba(255, 184, 4, 1);
+    --pippin-2: 
+  rgba(255, 224, 224, 1);
+    --fair-pink: 
+  rgba(255, 233, 234, 1);
+    --white: 
+  rgba(255, 255, 255, 1);
+  
+    --font-size-xxs: 10px;
+    --font-size-xxl: 26px;
+    --font-size-s2: 14px;
+    --font-size-m2: 16px;
+    --font-size-l2: 18px;
+    --font-size-xs2: 12px;
+    --font-size-xl2: 20px;
+    --font-size-xl3: 24px;
+  
+    --font-family-helvetica_neue-bold: "Helvetica Neue-Bold";
+    --font-family-helvetica_neue-regular: "Helvetica Neue-Regular";
+    --font-family-inter: "Inter";
+    --font-family-inter-bold: "Inter-Bold";
+    --font-family-inter-medium: "Inter-Medium";
+    --font-family-inter-regular: "Inter-Regular";
+    --font-family-inter-semibold: "Inter-SemiBold";
+    --font-family-microsoft_jhenghei-bold: "Microsoft JhengHei-Bold";
+    --font-family-microsoft_jhenghei-regular: "Microsoft JhengHei-Regular";
+    --font-family-noto_sans: "Noto Sans";
+    --font-family-nunito_sans: "Nunito Sans";
+    --font-family-nunito_sans-extrabold: "Nunito Sans-ExtraBold";
+    --font-family-poppins: "Poppins";
+    --font-family-poppins-bold: "Poppins-Bold";
+    --font-family-poppins-regular: "Poppins-Regular";
+    --font-family-roboto: "Roboto";
+    --font-family-roboto-bold: "Roboto-Bold";
+    --font-family-roboto-light: "Roboto-Light";
+    --font-family-roboto-regular: "Roboto-Regular";
+    --font-family-roboto-semibold: "Roboto-SemiBold";
+    --font-family-souliyo_unicode-regular: "Souliyo Unicode-Regular";
+    --font-family-stick: "Stick";
+  }
+  
+  /* Classes */
+  
+  .nunitosans-bold-mine-shaft-42px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: 42px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-regular-normal-falcon-14px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins-regular);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .souliyounicode-regular-normal-black-20px {
+    color: var(--black2);
+    font-family: var(--font-family-souliyo_unicode-regular);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-dove-gray-26px {
+    color: var(--dove-gray);
+    font-family: var(--font-family-nunito_sans);
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .helveticaneue-bold-cod-gray-20px {
+    color: var(--cod-gray);
+    font-family: var(--font-family-helvetica_neue-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-regular-normal-black-16px {
+    color: var(--black2);
+    font-family: var(--font-family-inter-regular);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-light-mine-shaft-16px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto-light);
+    font-size: var(--font-size-m2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-old-copper-14px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .helveticaneue-regular-normal-falcon-14px {
+    color: var(--falcon-2);
+    font-family: var(--font-family-helvetica_neue-regular);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-medium-black-14px {
+    color: var(--black2);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-s2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .helveticaneue-bold-beryl-green-20px {
+    color: var(--beryl-green);
+    font-family: var(--font-family-helvetica_neue-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-silver-chalice-10px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-silver-chalice-20px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .nunitosans-bold-silver-chalice-16px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-old-copper-24px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xl3);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-semi-bold-falcon-16px {
+    color: var(--falcon);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .nunitosans-black-mine-shaft-24px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 900;
+    font-style: normal;
+  }
+  .notosans-normal-old-copper-20px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-silver-chalice-14px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-s2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-mine-shaft-16px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .notosans-normal-sepia-16px {
+    color: var(--sepia);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .helveticaneue-bold-cod-gray-18px {
+    color: var(--cod-gray);
+    font-family: var(--font-family-helvetica_neue-bold);
+    font-size: var(--font-size-l2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-medium-black-12px {
+    color: var(--black2);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-xs2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .notosans-bold-old-copper-14px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-normal-falcon-12px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-chicago-12px {
+    color: var(--chicago);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xs2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .roboto-light-dove-gray-20px {
+    color: var(--dove-gray-2);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-falcon-14px {
+    color: var(--falcon);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-semi-bold-mine-shaft-20px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xl2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .helveticaneue-regular-normal-falcon-16px {
+    color: var(--falcon-2);
+    font-family: var(--font-family-helvetica_neue-regular);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-normal-fair-pink-26px {
+    color: var(--fair-pink);
+    font-family: var(--font-family-roboto);
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .stick-normal-black-50px {
+    color: var(--black2);
+    font-family: var(--font-family-stick);
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-medium-ocean-blue-pearl-16px {
+    color: var(--ocean-blue-pearl);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-old-copper-10px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-extra-bold-mine-shaft-16px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-mine-shaft-18px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-l2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-regular-normal-black-20px {
+    color: var(--black2);
+    font-family: var(--font-family-poppins-regular);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-bold-falcon-14px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .notosans-normal-old-copper-32px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-mine-shaft-32px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .roboto-regular-normal-fair-pink-26px {
+    color: var(--fair-pink);
+    font-family: var(--font-family-roboto-regular);
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-normal-falcon-14px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-bold-black-12px {
+    color: var(--black2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-black-white-24px {
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 900;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-falcon-16px {
+    color: var(--falcon-2);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-silver-chalice-16px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .inter-medium-black-14px {
+    color: var(--black2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-old-copper-18px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-l2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-normal-gray-16px {
+    color: var(--gray);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-normal-silver-chalice-10px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-bold-silver-chalice-14px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .roboto-light-mine-shaft-16px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .nunitosans-bold-mine-shaft-24px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .notosans-normal-old-copper-16px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-falcon-12px {
+    color: var(--falcon);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .notosans-bold-old-copper-40px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-semi-bold-magic-potion-14px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter-semibold);
+    font-size: var(--font-size-s2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .inter-bold-magic-potion-28px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter);
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-old-copper-20px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-mine-shaft-20px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-normal-black-16px {
+    color: var(--black2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .helveticaneue-bold-white-20px {
+    font-family: var(--font-family-helvetica_neue-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .roboto-light-concord-16px {
+    color: var(--concord);
+    font-family: var(--font-family-roboto-light);
+    font-size: var(--font-size-m2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-silver-chalice-16px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-m2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-old-copper-16px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-m2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-extra-extra-bold-mine-shaft-16px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans-extrabold);
+    font-size: var(--font-size-m2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  .inter-medium-gray-10px {
+    color: var(--gray);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-xxs);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-medium-black-12px {
+    color: var(--black2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .roboto-light-concord-16px {
+    color: var(--concord);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .notosans-semi-bold-old-copper-24px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .inter-regular-normal-gray-16px {
+    color: var(--gray);
+    font-family: var(--font-family-inter-regular);
+    font-size: var(--font-size-m2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-normal-silver-chalice-24px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-normal-mine-shaft-26px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto);
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .notosans-normal-old-copper-14px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-mine-shaft-24px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .roboto-semi-bold-mine-shaft-20px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto-semibold);
+    font-size: var(--font-size-xl2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .helveticaneue-bold-steel-gray-20px {
+    color: var(--steel-gray);
+    font-family: var(--font-family-helvetica_neue-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-bold-mine-shaft-18px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-l2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .inter-semi-bold-magic-potion-12px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter-semibold);
+    font-size: var(--font-size-xs2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .inter-medium-persian-blue-14px {
+    color: var(--persian-blue);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-s2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .helveticaneue-regular-normal-cod-gray-14px {
+    color: var(--cod-gray);
+    font-family: var(--font-family-helvetica_neue-regular);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-falcon-20px {
+    color: var(--falcon-2);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-falcon-14px-2 {
+    color: var(--falcon-2);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-regular-normal-mine-shaft-26px {
+    color: var(--mine-shaft-2);
+    font-family: var(--font-family-roboto-regular);
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-silver-chalice-14px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-beryl-green-20px {
+    color: var(--beryl-green);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .poppins-normal-black-20px {
+    color: var(--black2);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-cod-gray-20px {
+    color: var(--cod-gray);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-medium-bali-hai-12px {
+    color: var(--bali-hai);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-xs2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-semi-bold-falcon-16px {
+    color: var(--falcon);
+    font-family: var(--font-family-inter-semibold);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .nunitosans-black-denim-24px {
+    color: var(--denim);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 900;
+    font-style: normal;
+  }
+  .inter-medium-gray-10px {
+    color: var(--gray);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xxs);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-medium-ocean-blue-pearl-16px {
+    color: var(--ocean-blue-pearl);
+    font-family: var(--font-family-inter-medium);
+    font-size: var(--font-size-m2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-bold-magic-potion-28px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter-bold);
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-bold-mine-shaft-20px {
+    color: var(--mine-shaft2);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .poppins-bold-falcon-14px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins-bold);
+    font-size: var(--font-size-s2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-old-copper-12px {
+    color: var(--old-copper);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-medium-bali-hai-12px {
+    color: var(--bali-hai);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-regular-normal-falcon-12px {
+    color: var(--falcon);
+    font-family: var(--font-family-poppins-regular);
+    font-size: var(--font-size-xs2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-semi-bold-magic-potion-12px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-white-20px {
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-bold-cod-gray-20px {
+    color: var(--cod-gray);
+    font-family: var(--font-family-microsoft_jhenghei-bold);
+    font-size: var(--font-size-xl2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .nunitosans-semi-bold-silver-chalice-12px {
+    color: var(--silver-chalice);
+    font-family: var(--font-family-nunito_sans);
+    font-size: var(--font-size-xs2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .inter-semi-bold-magic-potion-14px {
+    color: var(--magic-potion);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .roboto-light-dove-gray-20px {
+    color: var(--dove-gray-2);
+    font-family: var(--font-family-roboto-light);
+    font-size: var(--font-size-xl2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  .notosans-bold-old-copper-24px {
+    color: var(--old-copper);
+    font-family: var(--font-family-noto_sans);
+    font-size: var(--font-size-xl3);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .microsoftjhenghei-regular-normal-black-32px {
+    color: var(--black2);
+    font-family: var(--font-family-microsoft_jhenghei-regular);
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .inter-medium-persian-blue-14px {
+    color: var(--persian-blue);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter-bold-black-12px {
+    color: var(--black2);
+    font-family: var(--font-family-inter-bold);
+    font-size: var(--font-size-xs2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  .helveticaneue-regular-normal-falcon-20px {
+    color: var(--falcon-2);
+    font-family: var(--font-family-helvetica_neue-regular);
+    font-size: var(--font-size-xl2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .stick-normal-old-copper-24px {
+    color: var(--old-copper);
+    font-family: var(--font-family-stick);
+    font-size: var(--font-size-xl3);
+    font-weight: 400;
+    font-style: normal;
+  }
+  .stick-normal-black-32px {
+    color: var(--black2);
+    font-family: var(--font-family-stick);
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+  }

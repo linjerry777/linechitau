@@ -1,0 +1,195 @@
+@import '../../src/css/global-style.scss';
+@import 'material-symbols';
+.demo {
+  display: flex;
+  justify-content: flex-end;
+  color: #734338;
+  font-size: 15px;
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 350px;
+    height: 650px;
+    background-color: var(--bianca);
+    border-radius: 20px;
+    .firstBtn {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 250px;
+      border: 1px solid #734338;
+      border-radius: 10px;
+      background-color: var(--bianca);
+      color: #734338;
+      text-align: center;
+    }
+    .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      img {
+        margin: 20px 15px;
+        width: 30px;
+        height: 30px;
+      }
+      .google {
+        background: url(./image/google.png);
+        background-size: 30px 30px;
+        border: none;
+        margin: 20px 15px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .email {
+      margin-top: 60px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid #734338;
+        background-color: var(--bianca);
+      }
+      .emailWarning {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        color: red;
+        .material-symbols-outlined {
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    .email {
+      margin-top: 60px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid #734338;
+        background-color: var(--bianca);
+      }
+      .emailWarning {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        color: red;
+        .material-symbols-outlined {
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    .name {
+      margin-top: 20px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid #734338;
+        background-color: var(--bianca);
+      }
+    }
+    .password {
+      margin-top: 20px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid #734338;
+        background-color: var(--bianca);
+      }
+      .passwordWarning {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        color: red;
+        .material-symbols-outlined {
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+      .forget {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .confirmPassword {
+      margin-top: 20px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid #734338;
+        background-color: var(--bianca);
+      }
+      .passwordWarning {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        color: red;
+        .material-symbols-outlined {
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+      .forget {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .loader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      .loaderText {
+        margin-left: 10px;
+      }
+    }
+    .check {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      .material-symbols-outlined {
+        color: lightgreen;
+      }
+    }
+    .btn-login {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .lastBtn {
+        width: 120px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ffb905;
+        color: #734338;
+      }
+    }
+  }
+  img {
+    width: 1920px;
+    height: 750px;
+  }
+}

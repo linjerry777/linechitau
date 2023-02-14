@@ -1,0 +1,55 @@
+@import "../../css/global-style.scss";
+
+$border-radius: 10px;
+
+.big-wrapper {
+  width: 1440px;
+  margin:50px auto;
+}
+.main-wrapper {
+  width:960px;
+  display: grid;
+  grid-template-columns: [it-start product-start] 960px [it-end product-end buy-start em-start] 360px [buy-end em-end];
+  grid-template-rows: [it-start buy-start] 80px [it-end product-start buy-end em-start] max-content [product-end em-end];
+  gap:48px 120px;
+}
+.interaction-container {
+  padding-inline: 20px;
+}
+/*所有container都是一樣顏色*/
+div[class$='container'] {
+  background-color: $secondary;
+  border-radius: $border-radius;
+}
+
+/*購買按鈕和他的容器*/
+.buy-container {
+  grid-area:buy;
+  height: max-content;
+  position:relative;
+}
+.total {
+  padding-top: 22px;
+  padding-left: 20px;
+  height:80px;
+}
+.price-and-buy {
+  height:248px;
+}
+.product-wrapper {
+  display: grid;
+  grid-auto-rows: repeat(auto-fill 194px);
+  row-gap: 48px;
+}
+
+.test {
+  height: 500px;
+}
+
+/*checkbox 大小*/
+input[type='checkbox'] {
+  width: 25px;
+  height: 25px;
+}
+
+

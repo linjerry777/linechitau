@@ -1,0 +1,44 @@
+@import '../../../../../css/global-style.scss';
+
+$general:10px;
+
+@mixin unfilled-google-icons{
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+@mixin filled-google-icons {
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+//設定大頭貼圓圈大小
+.profile-container {
+
+    width: 72px;;
+    height: 72px;
+    border-radius: 60px;
+    overflow: hidden;
+    .profile-pic {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  //設定上傳者上傳的圖片
+  .picture-container {
+    width: 100%; 
+      .picture {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .picture+.picture {
+        margin-left: $general;
+      }
+  }
+
+.material-symbols-outlined {
+    @include unfilled-google-icons();
+} 

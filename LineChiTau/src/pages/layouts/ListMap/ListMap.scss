@@ -1,0 +1,15 @@
+@import "../../../css/global-style.scss";
+
+$general-padding:10px;
+
+.list-map {
+  max-width: 250px;
+  height: 200px;
+  background-color: #aaa;
+  .map-view {
+    border:none;
+    background-color: $main;
+    border-radius: $border-radius;
+    padding: $general-padding;
+  }
+}

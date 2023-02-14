@@ -1,0 +1,47 @@
+@import "../../../css/global-style.scss";
+
+
+
+
+
+
+/*所有container都是一樣顏色*/
+div[class$='container'] {
+  background-color: $secondary;
+  border-radius: $border-radius;
+}
+
+/*購買按鈕和他的容器*/
+
+
+
+.product-wrapper {
+  display: grid;
+  grid-auto-rows: repeat(auto-fill 194px);
+  row-gap: 48px;
+}
+
+.test {
+  height: 500px;
+}
+
+/*checkbox 大小*/
+input[type='checkbox'] {
+  width: 25px;
+  height: 25px;
+}
+// NOTE NEW
+.cart-controll-bar{
+  background-color: $secondary;
+  border-radius: $border-radius;
+}
+.cart-totalSub{
+  background-color: $secondary;
+  border-radius: $border-radius;
+  box-shadow:  0px 2px 2px -1px rgba(0, 0, 0, 0.2);
+}
+.cart-link-btn{
+  width: fit-content;
+  
+}
+

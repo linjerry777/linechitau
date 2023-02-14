@@ -1,0 +1,40 @@
+@import '../../../../css/global-style.scss';
+
+.popular-category {
+  max-width: 1100px;
+  background-color: $secondary;
+  border-radius: 20px;
+  .picture-list {
+    overflow: hidden;
+  }
+  .picture-box {
+    transition: 0.5s;
+    max-width: 850px;
+    .picture {
+      width: 125px;
+      height: 160px;
+    }
+  }
+  .arrow-btn-box {
+    background-color: transparent;
+    border: none;
+    line-height: 73px;
+  }
+  .arrow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $main;
+    border: none;
+    font-size: 36px;
+    color: $textColor;
+    padding-top: 7px;
+  }
+  .arrow-btn:hover {
+    color: $secondary;
+    background-color: $hoverColor;
+  }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../css/global-style.scss";
+
+  $general-padding:10px;
+
+.cart-wrapper {
+  width: 400px;
+  min-height: 166px;
+  max-height: 266px;
+  border:$main 2px solid;
+  border-radius: $border-radius;
+  position: absolute;
+  top:40px;
+
+    .stuff-container {
+      display:grid;
+      min-height: calc(166px - 66px);
+      max-height: calc(266px - 66px);
+      grid-template-columns: 100%;
+      grid-auto-rows: 1fr;
+      overflow-y: auto;
+    }
+    &::before {
+      content:"";
+      width: 40px;
+      height: 40px;
+      background-color: $main;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      position: absolute;
+      right:20px;
+      top:-40px;
+    }
+}
+
+
+.info-container {
+  padding: $general-padding;
+  border-top:$main 2px solid;
+  border-bottom: $main 2px solid;
+  border-radius: 0 0 10px 10px;
+  background-color: $secondary;
+}

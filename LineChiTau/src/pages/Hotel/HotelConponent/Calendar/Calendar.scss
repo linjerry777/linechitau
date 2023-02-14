@@ -1,0 +1,32 @@
+@import '../../../../css/global-style.scss';
+
+.calendar {
+  z-index: 999;
+  max-width: 350px;
+  .display-box {
+    // border: 1px solid $textColor;
+    background-color: $secondary;
+  }
+  .year-title {
+    background: $secondary;
+    .arrow {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+      font-size: 40px;
+      cursor: pointer;
+      color: $textColor;
+    }
+    .arrow:hover {
+      color: $main;
+    }
+  }
+  .date:hover {
+    background: $main;
+  }
+  .date-selected {
+    background: $main;
+  }
+  .calendar-box {
+    width: 100%;
+    background: $secondary;
+  }
+}

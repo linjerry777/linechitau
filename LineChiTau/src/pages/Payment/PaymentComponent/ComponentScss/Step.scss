@@ -1,0 +1,52 @@
+@import '../../layout/payment.scss';
+
+
+.circle{
+    background-color: $main;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 9px solid transparent;
+}
+
+.stepBlock {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .circleWrapper{
+        padding-right: 20px;
+    }
+    .stepLabel{
+        
+        position: relative;
+    }
+    
+}
+.stepBlock:not(:last-child){
+    .stepLabel::after{
+        content: '';
+        // width: 100%;
+        // height: 2px;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // background-color: $textColor;
+        // margin: auto;
+    }
+    
+} 
+.selected{
+    .circle{
+        background-color: #fff;
+        border-color: $main;
+        box-shadow: 0 4px 4px rgba($color: #000000, $alpha: .2);
+    }
+}
+.done{
+    .circle{
+        background-color: #fff;
+        border-color: $main;
+        border-width: 3px;
+    }
+}
+

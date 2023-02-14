@@ -1,0 +1,19 @@
+@import '../../../../css/global-style.scss';
+
+.hotel-room-rule {
+  border: 1px solid $textColor;
+  width: 1280px;
+  .notice-icon {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  }
+
+  .room-service-picbox {
+    width: 420px;
+    height: 250px;
+
+    .room-service-pic {
+      width: 420px;
+      height: 250px;
+    }
+  }
+}

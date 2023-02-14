@@ -1,0 +1,69 @@
+@import '../../../../css/global-style.scss';
+
+
+@mixin unfilled-google-icons {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+@mixin filled-google-icons {
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+.material-symbols-outlined {
+    @include unfilled-google-icons();
+} 
+
+.material-symbols-outlined.location {
+    @include filled-google-icons();
+    margin-inline : 10px;
+    background-color: $main;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.trip-search-bar-wrapper {
+    width: 810px;
+    height: 100px;
+    border-radius: 32px;
+    border:1px solid black;
+    box-shadow: 0 4 4px rgba($color: #000000, $alpha: 0.25);
+}
+
+.search-hint {
+    font-weight: bold;
+    flex-grow: 0;
+}
+
+.trip-search-bar-keyword-container {
+
+    flex-grow: 1;
+    margin-inline:5px;
+
+        .trip-search-bar-new-keyword {
+            width: 100%;
+            border:solid transparent;
+            height: 60px;
+            border-radius: 10px;
+        
+        &:focus {
+             outline:  1px solid $main;
+        }
+        }
+}
+
+.search-launch-btn {
+    flex-grow:0;
+    margin-inline:10px;
+    height: 66px;
+    width: 92px;
+    border-radius: 10px;
+    background-color: $main;
+    border: none;
+        span {
+            font-size: 36px;
+        }
+}

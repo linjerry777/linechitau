@@ -1,0 +1,38 @@
+@import '../../css/global-style.scss';
+
+.fill-background {
+  background-color: $secondary;
+}
+.container-fluid {
+  padding: 0;
+
+  // height: 150px;
+
+  .footer {
+    max-width: 1440px;
+
+    .my-p {
+      line-height: 28px;
+    }
+
+    .logo {
+      height: 100px;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    .col-4 {
+      width: 390px;
+      text-align: center;
+    }
+    .col-2 {
+      text-align: center;
+    }
+    .col-3 {
+      text-align: center;
+    }
+  }
+}

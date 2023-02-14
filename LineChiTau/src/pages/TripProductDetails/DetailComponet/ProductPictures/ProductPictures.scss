@@ -1,0 +1,27 @@
+@import '../../../../css/global-style.scss';
+
+$mainPicWidth : 855px;
+$vicePicWidth : 420px;
+// 580/855  = 0.68
+$PicWidthRate : 0.68;
+
+  .left-side {
+
+    .main-pic-box {
+
+      .main-pic {
+        width: $mainPicWidth;
+        height: calc($mainPicWidth * $PicWidthRate);
+        object-fit: cover;
+      }
+    }
+  }
+  .vice-pic-box {
+
+    .vice-pic {
+      width: $vicePicWidth;
+      height: calc($vicePicWidth * $PicWidthRate);
+      object-fit: cover;
+    }
+  }
+

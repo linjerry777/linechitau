@@ -1,0 +1,176 @@
+@import url(../../../../css/global-style.scss);
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-alllist {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: fit-content;
+  .buytitle {
+    height: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    width: 255px;
+  }
+  .buylist-alllist {
+    // height: 493px;
+    min-width: 939px;
+    .buylist-items-alllist {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      // justify-content: center;
+    //   overflow: auto;
+    //   max-height: 500px;
+      left: 0;
+    //   min-height: 432px;
+      top: 0;
+      width: 880px;
+      .TListSpinner{
+        position: absolute;
+      }
+      .overlap-group-1 {
+        margin: 10px 0;
+        border: 1px solid;
+        border-color: var(--old-copper);
+        align-items: center;
+        background-color: var(--white);
+
+        display: flex;
+        gap: 18px;
+        height: 125px;
+        min-width: 869px;
+        padding: 14.6px 18.4px;
+        .rectangle-1911 {
+          height: 95px;
+          object-fit: cover;
+          width: 115px;
+        }
+        .text {
+        }
+        .button {
+          display: flex;
+          flex-direction: column;
+          height: 100px;
+          justify-content: space-around;
+          margin-left: auto;
+          .button-1 {
+            align-items: flex-start;
+            border: 1px solid;
+            border-color: var(--old-copper);
+            border-radius: 10px;
+            display: flex;
+            height: 36px;
+            left: 708px;
+            min-width: 148px;
+            padding: 5px 40.7px;
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .seeall{
+    margin-left: calc(50% - 70px);
+  }
+  .prefertitle {
+    height: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 255px;
+  }
+  
+}
+@media (max-width: 390px) {
+  .container-alllist {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 390px;
+    .buytitle {
+      height: 62px;
+      letter-spacing: 0;
+      line-height: normal;
+      margin-top: -1px;
+      width: 255px;
+    }
+    .buylist-alllist {
+      // height: 493px;
+      min-width: 390px;
+      .buylist-items-alllist {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        // justify-content: center;
+        overflow: auto;
+        max-height: 500px;
+        left: 0;
+        min-height: 432px;
+        top: 0;
+        width: 390px;
+        .TListSpinner{
+          position: absolute;
+        }
+        .overlap-group-1 {
+          margin: 10px 0;
+          border: 1px solid;
+          border-color: var(--old-copper);
+          background-color: var(--white);
+          display: flex;
+          width: 360px;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          height: auto;
+          min-width: 0;
+          padding: 0;
+          .rectangle-1911 {
+            height: 95px;
+            object-fit: cover;
+            width: 115px;
+          }
+          .text {
+          }
+          .button {
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            justify-content: space-around;
+            margin-left: unset;
+            .button-1 {
+              align-items: flex-start;
+              border: 1px solid;
+              border-color: var(--old-copper);
+              border-radius: 10px;
+              display: flex;
+              height: 36px;
+              left: 708px;
+              min-width: 148px;
+              padding: 5px 40.7px;
+              top: 15px;
+            }
+          }
+        }
+      }
+    }
+    .seeall{
+      margin-left: calc(50% - 70px);
+    }
+    .prefertitle {
+      height: 62px;
+      letter-spacing: 0;
+      line-height: normal;
+      width: 255px;
+    }
+    
+  }
+}

@@ -1,0 +1,60 @@
+/* 字型、字體大小 */
+my-h1~my-h6
+my-p
+my-p-small
+
+/* 顏色 */
+my-main-color:#FFB905
+my-secondary-color:#FCFAF2
+my-text-color:#734338
+my-hover-color: #FF9B05
+/* hover-text用BS5的light */
+/* 錯誤訊息用BS5的danger */
+/* 成功訊息用BS5的success */
+
+/* Effect */
+my-border-radius: 10px
+
+/* 元件 */
+my-btn{
+
+padding: 15px,15px
+border-radius: 10px
+text-align:center
+background:#FFB905
+
+}
+my-filled-btn{
+
+padding: 15px,0
+border-radius: 10px
+width:100%
+text-align:center
+background:#FFB905
+
+}
+my-products-card:{
+width:900px
+height:250px
+border: 1px solid #734338
+padding: 20px
+}
+my-service-tag:padding:10px,40px
+
+my-icon:height:30px
+
+my-icon-small:height:16px
+
+my-small-card{
+width:260px
+height:350px
+padding:20px
+border: 1px solid #734338
+}
+
+
+/* 商品頁專用 */
+title-underline{
+box-shadow:inset  0px -13px 0px #FFB905;
+padding:0px;
+}

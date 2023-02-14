@@ -1,0 +1,115 @@
+@import url(../../../../css/global-style.scss);
+.container-setting {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: fit-content;
+  .buytitle {
+    height: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    width: 255px;
+  }
+  .manger-profile {
+    height: 400px;
+    min-width: 939px;
+    background-color: var(--bianca);
+    .form {
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-around;
+      flex-direction: row;
+      .form-item {
+        display: flex;
+        flex-direction: column;
+        .form-input {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          .form-text1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            .NotRequired {
+              color: #7f7f7f;
+              font-size: 2px;
+            }
+          }
+          .input-setting {
+            
+            margin-top: 5px;
+            text-align: center;
+            // background-color: #f2f2f2;
+            border-radius: 10px;
+            border: 1px solid #e6e6e6;
+            height: 40px;
+          }
+        }
+      }
+      
+    }
+    .btn-center {
+      display: flex;
+      justify-content: center;
+      button {
+        margin-top: 75px;
+        width: 100px;
+      }
+      .btn-save {
+        margin-top: 0;
+        width: 100px;
+      }
+    }
+  }
+}
+    .form {
+      display: flex;
+      margin-top: 10px;
+      justify-content: space-around;
+      flex-direction: row;
+      .form-item {
+        display: flex;
+        flex-direction: column;
+        .form-input {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          .form-text1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            .NotRequired {
+              color: #7f7f7f;
+              font-size: 2px;
+            }
+          }
+          .input-setting {
+            margin-top: 5px;
+            text-align: center;
+            // background-color: #f2f2f2;
+            border-radius: 10px;
+            border: none;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .btn-center {
+      display: flex;
+      justify-content: center;
+      button {
+        margin-top: 15px;
+        width: 100px;
+      }
+      .btn-pwd {
+        margin-top: 90px;
+        width: 100px;
+      }
+    }
+  
+
+

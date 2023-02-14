@@ -1,0 +1,22 @@
+@import '../../../../css/global-style.scss';
+
+.transpotation {
+  border: 1px solid $textColor;
+  width: 1320px;
+  padding: 0;
+
+  .big-map {
+    width: 420px;
+    height: 215px;
+    background-color: #aaa;
+
+    button {
+      border: none;
+      background: $main;
+      top: 40%;
+      left: 40%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}

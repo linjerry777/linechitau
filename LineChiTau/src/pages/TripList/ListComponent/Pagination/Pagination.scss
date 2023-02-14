@@ -1,0 +1,25 @@
+@import "../../../../css/global-style.scss";
+
+.pagination-container {
+
+  .pagination-arrow {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    color: $textColor;
+    margin: 0;
+  }
+  .pagination-border:hover {
+    background: $main;
+  }
+  .pagination-border {
+    border-left: 1px solid $textColor;
+    border-top: 1px solid $textColor;
+    border-bottom: 1px solid $textColor;
+  }
+  .next {
+    border-right: 1px solid $textColor;
+    border-radius: 0 10px 10px 0;
+  }
+  .previous {
+    border-radius: 10px 0 0 10px;
+  }
+}

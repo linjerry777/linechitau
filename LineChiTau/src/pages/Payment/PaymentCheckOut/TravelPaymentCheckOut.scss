@@ -1,0 +1,62 @@
+@import '../layout/payment.scss';
+
+/*NOTE 付款方式 */
+.payment-chosen-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+    height: 100%;
+}
+/* 同意條款 */
+.rule-section{
+        border-radius: $my-border-radius;
+        
+}
+/* 小計清單 */
+.sub-list{
+position: relative;
+}
+.sub-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.sub-detail{
+    background: #fff;
+    border-radius: $my-border-radius;
+
+}
+.sub-price{
+    background: $secondaryTwo;
+    padding: 8px 15px;
+    border-radius: $my-border-radius;
+}
+/* total */
+.topay a{
+    color: $textColor;
+}
+.payment-detail{
+    background: $secondary ;
+    border-radius: $my-border-radius;
+}
+.credit-card-section{
+    background: #fff;
+    border-radius: $my-border-radius;
+}
+/* 折扣 */
+.use-coupon-btn{
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+.item-section{
+        background: $secondary;
+        border-radius: $my-border-radius;
+        padding: 30px 40px;
+    }
+.tabUnActive{
+    border:1px solid transparent
+}
+.tabActive{
+    border:1px solid $main
+}

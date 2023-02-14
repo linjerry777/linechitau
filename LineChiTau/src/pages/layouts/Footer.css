@@ -1,0 +1,12 @@
+@import url(../../css/global-style.scss);
+.container-fluid {
+  padding: 0;
+  background-color: var(--bianca);
+}
+
+.footer {
+  max-width: 1440px;
+}
+.footer .logo {
+  height: 120px;
+}/*# sourceMappingURL=Footer.css.map */

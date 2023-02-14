@@ -1,0 +1,48 @@
+@import '../../../../css/global-style.scss';
+@import 'material-symbols';
+.container-pay {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: fit-content;
+  .buytitle {
+    height: 62px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    width: 255px;
+  }
+  .manger-profile {
+    height: 400px;
+    min-width: 939px;
+    background-color: var(--bianca);
+    .pay-text {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .pay-card {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      img {
+        width: 150px;
+        height: auto;
+        margin-left: 50px;
+      }
+    }
+    .cards {
+      .button-submit{
+        width: 150px;
+        height: 30px;
+        margin-top: 50px;
+        margin-left: 300px;
+        border: none;
+        border-radius: 10px;
+        background-color: #30bddc;
+        color: white;
+      }
+    }
+  }
+}

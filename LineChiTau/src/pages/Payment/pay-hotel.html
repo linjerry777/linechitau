@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>填資料(住宿)</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");</style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+<style>
+    :root {
+  --main: #FFB905;
+  --secondary: #fcfaf2;
+  --secondaryTwo:#FCE7AF;
+  --textColor: #734338;
+  --hoverColor: #ff9b05;
+  --my-border-radius: 10px;
+}
+body{
+    color: var(--textColor);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.object-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: fit-content;
+    background: linear-gradient(to bottom, transparent 75%, var(--main) 75% );
+}
+.my-btn{
+    background: var(--main);
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    border: 0 solid transparent;
+}
+.my-edit-btn{
+    background: var(--secondaryTwo);
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+/* 進度條 */
+    .step-bar{
+        height: 75px;
+        background: var(--secondary);
+        border-radius: 20px;
+    }
+    .step-done{
+        width: 30px;
+        height: 30px;
+        background: var(--main);
+        border-radius: 50%;
+        border:1px solid var(--textColor);
+    }
+    .step-doing-center{
+        width: 18px;
+        height: 18px;
+        background: var(--main);
+        border:1px solid var(--textColor);
+        border-radius: 50%;
+    }
+    .step-doing{
+        width: 36px;
+        height: 36px;
+        background: #fff;
+        border-radius: 50%;
+        border:1px solid var(--textColor);
+        box-shadow:  0 4px 4px 0 rgba(49, 49, 49,0.25);
+    }
+    .step-undo{
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border-radius: 50%;
+        border:1px solid var(--textColor);
+    }
+    .line{
+        height: 2px;
+        background: var(--textColor);
+        border-radius: 3px;
+    }
+    .line-done{
+        height: 5px;
+        background: var(--textColor);
+        border-radius: 3px;
+    }
+/* 購物車清單 */
+    .item-section{
+        background: var(--secondary);
+        border-radius: var(--my-border-radius);
+        padding: 30px 40px;
+    }
+    .item{
+        background: #fff;
+        border-radius: var(--my-border-radius);
+    }
+    .item-image{
+        border-radius: var(--my-border-radius);
+    }
+    
+/* 聯絡資料 */
+.contact-user-btn{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+    /* border: 1px solid var(--textColor); */
+}
+/* 折扣 */
+.use-coupon-btn{
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+/* 同意條款 */
+.rule-section{
+        border-radius: var(--my-border-radius);
+        
+}
+/* 小計清單 */
+.sub-list{
+position: relative;
+
+}
+.sub-section{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+}
+.sub-detail{
+    background: #fff;
+    border-radius: var(--my-border-radius);
+
+}
+.sub-price{
+    background: var(--secondaryTwo);
+    padding: 8px 15px;
+    border-radius: var(--my-border-radius);
+}
+/* total */
+.topay a{
+    color: var(--textColor);
+}
+/* 住房資訊 */
+.order-info{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+}
+.order-info-detail{
+    background: #fff;
+}
+.room-info{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+}
+.tag{
+    background: var(--main);
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+/* 個人資料 */
+.profile-form{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+}
+.profile-form label{
+    margin-bottom: .5rem;
+}
+/* 特殊需求 */
+.memo-form{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+
+}
+/* 抵達時間 */
+.arrive-time{
+    background: var(--secondary);
+    border-radius: var(--my-border-radius);
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <!-- TODO 流程條 -->
+  <div class="container step-bar d-flex align-items-center justify-content-evenly">
+    <div class="d-flex align-items-center justify-content-center mx-2">
+       <div class="step-done"></div>
+       <span class="mx-2 fs-4">選擇方案</span>
+    </div>
+    <div class="line line-done flex-fill"></div>
+    <div class="d-flex align-items-center justify-content-center mx-2">
+        <div class="step-doing d-flex align-items-center justify-content-center">
+            <div class="step-doing-center"></div>
+        </div>
+        <span class="mx-2 fs-4">填寫資料</span>
+    </div>
+    <div class="line flex-fill"></div>
+    <div class="d-flex align-items-center justify-content-center mx-2">
+            <div class="step-undo"></div>
+            <span class="mx-2 fs-4">完成付款</span>
+    </div>
+  </div>
+  <main class="container ">
+
+    <!-- TODO 訂房商品資訊、飯店+房型+訂房規則-->
+    <div class="row my-3 justify-content-between">
+        <!-- NOTE  訂房商品資訊-->
+        <div class="col-4 p-0">
+            <div class="order-info px-4 py-3 h-100">
+                <h4 class="title my-3">您的住房資訊</h4>
+                <div class="check-time row mb-3 justify-content-between">
+                    <div class="col-6">
+                        <div class="check-in-time order-info-detail align-items-center px-3 py-2 ">
+                            <h6>入住時間</h6> 
+                            <div class="checkin-datetime d-flex flex-column">
+                                <span>2022年12月20日</span>
+                                <small>15:00起</small> 
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="check-out-time order-info-detail align-items-center  px-3 py-2">
+                            <h6>退房時間</h6> 
+                            <div class="checkout-datetime d-flex flex-column">
+                                <span>2022年12月21日</span>
+                                <small>12:00前</small>
+                            </div>
+                             
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class=" row justify-content-around  mb-3">
+                    <div class="col-12">
+                        <div class="room-chosen order-info-detail   px-3  py-2">
+                            <h5>已選擇：</h5> 
+                            <div class="chosen-room d-flex justify-content-around align-items-center">
+                                <span>行政尊爵套房</span><div class="change-chosen my-edit-btn w-25 d-flex align-items-center justify-content-center">更改選擇</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="sub order-info-detail py-3  ">
+                            <div class="sub-days sub-price bg-transparent row">
+                                <span class="col-4"> 總共入住：</span> <span class="col-auto">1晚</span>  
+                            </div>
+                            <div class="sub-price bg-transparent row ">
+                               <span class="col-4">價格：</span>  <span class="col-auto">新台幣60,000</span>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="not-in-price col-12 px-4">
+                        
+                        <span>未包含費用</span> 
+                        <div class="tax row ">
+                            <small class="col-4 mx-2">加值税       </small><small class="col-auto">          新台幣3,000</small> 
+                        </div>
+                        <div class="tip row ">
+                            <small class="col-4 mx-2">住宿方服務費    </small><small class="col-auto">      新台幣6,000</small> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NOTE  飯店+房型+訂房規則-->
+        <div class="col-8  pe-0">
+            <!-- NOTE 飯店名 -->
+            <div class="hotel-name mb-4 ">
+                <div class="room-info d-flex  align-items-center px-3 py-4">
+                    <div class=" col-3  mx-3">
+                        <img class="img-fluid item-image overflow-hidden" src="./cityscape.jpg" alt="行程票券商品圖">
+                    </div>
+                    <div class="item-context col-9 mx-3 align-self-start ">
+                        <h4>台北文華東方酒店</h4>
+                        <p>台北松山區敦化北路158號</p>
+                        <p class="d-flex align-items-center">
+                            <span class="material-symbols-rounded text-warning" >
+                                star
+                                </span>4.7 / 5
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="room-info   p-3">
+                <!-- NOTE 房型服務資訊 -->
+            <div class="room-service  mx-3 py-3">
+                    <div class="room-name d-flex align-items-center">
+                        <h4 class="me-3">行政尊爵套房 </h4>
+                        <small>*取消須付費</small>
+                    </div>
+                    <div class="service-list py-2 row-col-auto gx-2">
+                        <span class="tag ">早餐</span>
+                        <span class="tag ">喚醒服務</span>
+                        <span class="tag ">迷你吧</span>
+                        <span class="tag ">洗/烘衣服務</span>
+                    </div>
+                </div>    
+                <!-- NOTE  訂房規則-->
+                <div class="order-rule mx-3">
+                        <h5>訂前必讀</h5>
+                        <ul class="ps-5 row gy-2">
+                            <li>現在免付任何費用，您將於入住時付款</li>
+                            <li>2022年12月18日 下午11:59前，免費取消</li>
+                            <li>2022年12月19日 上午12:00起，收取新台幣60,000</li>
+                            <li>現在免付任何費用，您將於入住時付款</li>
+                        </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO 個人資料、MEMO -->
+    <div class="row mb-3">
+        <!-- NOTE 填寫個人資料 -->
+        <div class="col-6 p-0 " >
+            <div class="profile-form px-5 py-4 me-3 h-100">
+                <h4 class="title mb-3">請輸入個人資料</h4>
+                <div class="user-data">
+                    <div class="name d-flex">
+                        <div class="last-name ">
+                            <label for="">姓氏</label>
+                            <input type="text" class="form-control border-0">
+                        </div>
+                        <div class="first-name px-3">
+                            <label for="">名字</label>
+                            <input type="text" class="form-control border-0">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="">E-mail</label>
+                        <input type="text" class="form-control border-0 pe-3">
+                    </div>
+    
+                    <div class="tel">
+                        <label for="">連絡電話</label>
+                        <input type="text" class="form-control border-0">
+                    </div>
+    
+                    <div class="country-lang d-flex">
+                        <div class="country">
+                            <label for="">國家 / 地區</label>
+                            <input type="text" class="form-control border-0">
+                        </div>
+                        <div class="lang px-3">
+                            <label for="">語言</label>
+                            <input type="text" class="form-control border-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- NOTE MEMO -->
+        <div class="col-6 p-0">
+            <div class="memo-form px-5 py-4 ms-3 h-100">
+                <h4 class="title mb-3">您有什麼特別的需求？</h4>
+                <p class="">住宿方無法保證達成您的特殊要求－但將盡力為您安排。</p>
+                <textarea class="form-control border-0 " name="" id="" cols="5" rows="9"></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- TODO 預計抵達時間 -->
+    <div class="row  mb-3">
+        <div class="arrive-time col-12  px-5 py-4">
+            <h4 class="title mb-3">您的抵達時間</h4>
+            <ul class="row gy-2 ps-5">
+                <li>您的客房將會在 15:00 開放辦理入住
+                </li>
+                <li>24 小時接待櫃檯－在您有需要的時候，隨時都能為您提供服務！</li>
+            </ul>
+            <div class="arrive-time-point ">
+                <h5 class="py-3">請輸入您的抵達時間(可選填)</h5>
+                <select  class="form-control w-25 text-right">
+                    <option value="1">1:00</option>
+                    <option value="2">2:00</option>
+                    <option value="3">3:00</option>
+                    <option value="4">4:00</option>
+                    <option value="5">5:00</option>
+                    <option value="6">6:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- TODO 前往付款button -->
+    <div class="topay d-flex justify-content-center w-25 mx-auto pt-4 pb-5">
+        <button class=" my-btn "><a href="to-pay-hotel.html" class="text-decoration-none">前往付款</a></button> 
+    </div>
+            
+            
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
+<!-- {booker: {lastName: \'王\',firstName: \'小明\',email: \'wang1125@wanggg.com\',tel: \'0912555468\',country: \'台灣\',lang: \'中文\',},} -->

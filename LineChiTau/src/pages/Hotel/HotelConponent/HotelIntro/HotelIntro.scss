@@ -1,0 +1,60 @@
+@import '../../../../css/global-style.scss';
+
+.HotelIntro {
+  background: #fff;
+  .fixed-bar-a {
+    color: $secondary;
+  }
+  .fixed-bar-a:hover {
+    border-bottom: 3px solid $secondary;
+  }
+
+  .nav-hotelIntro {
+    background: $textColor;
+    color: $secondary;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 293px;
+    z-index: 998;
+    width: 1320px;
+  }
+
+  .left-side {
+    padding-left: 26px;
+    padding-right: 0;
+
+    .hotel-star-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+      font-size: 24px;
+      color: $main;
+    }
+
+    .service-box {
+      margin-right: 117px;
+    }
+  }
+
+  .right-side {
+    .map {
+      width: 420px;
+      height: 215px;
+      background-color: #aaa;
+      z-index: 0;
+
+      button {
+        border: none;
+        background: $main;
+        top: 40%;
+        left: 40%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

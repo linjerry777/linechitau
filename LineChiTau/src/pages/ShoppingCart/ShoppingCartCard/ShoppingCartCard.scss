@@ -1,0 +1,65 @@
+@import "../../../css/global-style.scss";
+
+$border-radius: 10px;
+
+.product-container {
+  width:960px;
+  display: grid;
+  grid-template-areas: "cb des expire buying" "edit del em price";
+  grid-template-columns: 100px 550px 1fr 1fr  ;
+  grid-template-rows: 150px 50px;
+}
+
+//卡片內容
+.selector,.img-box, .expire-date-box, .buying-amount {
+  padding-block:10px;
+  border-bottom:1px solid black;
+}
+.edit, .delete, .price {
+  align-self: center;
+  justify-self: left;
+}
+.selector,.edit {
+  padding-left: 20px;
+}
+.price {
+  justify-self: right;
+  padding-right:20px;
+  grid-area: price;
+}
+.img-box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "pic description";
+}
+
+/*img-box 的內容*/
+.img-box img {
+  width: 100px;
+  height: 100px;
+}
+.text-box h1,.text-box p {
+  width: 480px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.text-box {
+  overflow: hidden;
+}
+
+/*buying amount的內容*/
+.buying-amount {
+  padding-inline:20px;
+}
+.plus,.minus {
+  height: 20px;
+  filter: invert(26%) sepia(38%) saturate(730%) hue-rotate(324deg) brightness(92%) contrast(83%);
+}
+.amount {
+  min-width:50px;
+  height: 20px;
+  padding-inline: 10px;
+  border-radius: $border-radius;
+  border:1px solid $textColor;
+}

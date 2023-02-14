@@ -1,0 +1,44 @@
+@import './payment.scss';
+
+/* NOTE 進度條 */
+.step-bar{
+    display: flex;
+    height: 75px;
+    background: $secondary;
+    border-radius: 20px;
+}
+.step-done{
+    width: 30px;
+    height: 30px;
+    background: $main;
+    border-radius: 50%;
+    
+}
+.step-doing-center{
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+}
+.step-doing{
+    width: 36px;
+    height: 36px;
+    background: $main;
+    border-radius: 50%;
+    box-shadow:  0 4px 4px 0 rgba(49, 49, 49,0.25);
+}
+.step-undo{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+}
+.line{
+    height: 2px;
+    background: $textColor;
+    border-radius: 3px;
+}
+.line-done{
+    height: 5px;
+   
+}

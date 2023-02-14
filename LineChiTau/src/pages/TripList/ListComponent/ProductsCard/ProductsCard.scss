@@ -1,0 +1,73 @@
+@import "../../../../css/global-style.scss";
+
+$general-padding:10px;
+
+@mixin unfilled-google-icons{
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+@mixin filled-google-icons {
+    font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+    font-size: 28px;
+}
+
+
+// product-card 在 global-style 裡有設定
+// w900,h250 border padding
+.products-card {
+
+  .products-card-pic {
+    width: 300px;
+    height: 200px;
+  }
+  .products-tag-list {
+
+    .tag {
+      border: 1px solid $textColor;
+      background-color: transparent;
+        &:hover {
+          background-color: $main;
+        } 
+    }
+  }
+  .description {
+    display: -webkit-box;
+    height: 70px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .material-symbols-outlined {
+    @include filled-google-icons;
+  }
+  .material-symbols-outlined.bookmark {
+    @include unfilled-google-icons;
+    color:$main;
+    
+    &:hover {
+    @include filled-google-icons();
+    color:$main;
+    }
+    &.bookmarked {
+    @include filled-google-icons();
+    color:$main;
+    }
+  }
+
+}
+
+
+.products-card-link {
+  width:0px;
+  color:$textColor;
+  background-color: $main;
+
+  &.active {
+    width: 60px;
+  }
+
+}
+
+

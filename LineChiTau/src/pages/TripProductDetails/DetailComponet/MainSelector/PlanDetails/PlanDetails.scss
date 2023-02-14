@@ -1,0 +1,40 @@
+@import '../../../../../css/global-style.scss';
+
+@mixin unfilled-google-icons{
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: 28px;
+}
+
+@mixin filled-google-icons {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+  font-size: 28px;
+}
+
+.plan-details {
+  border: 1px solid $textColor;
+  border-radius: 10px;
+  padding-inline: 50px;
+  padding-block: 45px;
+  width: 400px;
+}
+
+.material-symbols-outlined.show-btn {
+  @include filled-google-icons();
+  transform: scale(1,-1);
+  &:active {
+      transform: none;
+  }
+  &.my-p {
+      font-size :22px;
+  }
+}
+
+.collapse-details {
+  display: none;
+}
+
+.details-container {
+  &:hover + .collapse-details {
+      display: block;
+  }
+}

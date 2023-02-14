@@ -1,0 +1,130 @@
+@import '../../../css/global-style.scss';
+@import 'material-symbols';
+
+
+$secondary: #fcfaf2;
+$secondaryTwo:#FCE7AF;
+$textColor: #734338;
+$hoverColor: #ff9b05;
+$my-border-radius: 10px;
+  
+  body{
+      color: $textColor;
+      font-family: 'Noto Sans TC', sans-serif;
+  }
+  .payment-main-width{
+    width: 1440px !important; 
+  }
+  .object-cover{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .title{
+      width: fit-content;
+      background: linear-gradient(to bottom, transparent 75%, $main 75% );
+  }
+  .my-pay-btn{
+      background: $main;
+      padding: 15px 0;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+      border: 0 solid transparent;
+  }
+  .my-edit-btn{
+      background: $secondaryTwo;
+      padding: 8px;
+      border-radius: 10px;
+      text-align: center;
+      border: 0 solid transparent;
+  }
+  .my-card-btn{
+      background: $secondaryTwo;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-align:justify;
+      border: 0 solid transparent;
+  }
+
+      /* 購物車清單 */
+    .item-section{
+        background: $secondary;
+        border-radius: $my-border-radius;
+        padding: 30px 40px;
+    }
+    .item{
+        background: #fff;
+        border-radius: $my-border-radius;
+    }
+    .item-image{
+        border-radius: $my-border-radius;
+    }
+    
+/* 聯絡資料 */
+.contact-user-btn{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+    /* border: 1px solid $textColor; */
+}
+/* 折扣 */
+.use-coupon-btn{
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0 solid transparent;
+}
+/* 同意條款 */
+.rule-section{
+        border-radius: $my-border-radius;
+        
+}
+/* 小計清單 */
+.sub-list{
+position: relative;
+
+}
+.sub-section{
+    background: $secondary;
+    border-radius: $my-border-radius;
+}
+.sub-detail{
+    background: #fff;
+    border-radius: $my-border-radius;
+
+}
+.sub-price{
+    background: $secondaryTwo;
+    padding: 8px 15px;
+    border-radius: $my-border-radius;
+}
+/* total */
+.topay a{
+    color: $textColor;
+}
+
+
+
+.payment-contact-data{
+    background: #fff;
+    border-radius: $my-border-radius;
+}
+.memo-textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+.memo-textarea-area{
+    width: 100%;
+    
+   
+}
+.memo-title-height{
+    flex: 0 0 auto;
+    width: 100%;
+    height: fit-content;
+}

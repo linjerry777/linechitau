@@ -1,0 +1,117 @@
+@import '../../../../css/global-style.scss';
+
+.hotellist-box {
+  background: #fff;
+
+  .display-map {
+    height: 60vh;
+    width: 80vw;
+    z-index: 1000;
+    left: calc(50% - 40vw);
+  }
+
+  .products-card {
+    .hotellist-pic-box {
+      overflow: hidden;
+      width: 300px;
+      height: 207px;
+
+      .detail-pic-arrow {
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 2px;
+        cursor: pointer;
+        border-radius: 50%;
+        // background: $main;
+        text-align: center;
+        font-size: 20px;
+        color: $textColor;
+      }
+
+      .detail-pic-arrowpre {
+        top: calc(50% - 12px);
+        z-index: 500;
+      }
+
+      .detail-pic-arrownext {
+        top: calc(50% - 11px);
+        right: 0;
+      }
+    }
+
+    .hotellist-pic-box:hover .detail-pic-arrow {
+      background: $main;
+      color: rgba($color: $textColor, $alpha: 1);
+
+      .detail-pic-arrow:hover {
+        background: $hoverColor;
+        color: rgba($color: $secondary, $alpha: 1);
+      }
+    }
+
+    .products-card-pic {
+      width: 300px;
+      height: 207px;
+    }
+  }
+
+  .text-hide {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  li {
+    .search-tag {
+      border: 1px solid $textColor;
+      background-color: transparent;
+    }
+
+    .search-tag:hover {
+      background-color: $main;
+    }
+  }
+
+  .ej-fill-icon {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 24px;
+    color: $textColor;
+  }
+
+  .booking-btn {
+    background: $main;
+    height: 250px;
+    padding-left: 10px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .pagenation-arrow {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    color: $textColor;
+    margin: 0;
+  }
+
+  .pagenation-border:hover {
+    background: $main;
+  }
+
+  .pagenation-border-active {
+    background: $main;
+  }
+
+  .pagenation-border {
+    border-left: 1px solid $textColor;
+    border-top: 1px solid $textColor;
+    border-bottom: 1px solid $textColor;
+  }
+
+  .next {
+    border-right: 1px solid $textColor;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .previous {
+    border-radius: 10px 0 0 10px;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../layout/payment.scss';
+/* 住房資訊 */
+.order-info {
+  background: $secondary;
+  border-radius: $my-border-radius;
+}
+.order-info-detail {
+  background: #fff;
+}
+.room-info {
+  background: $secondary;
+  border-radius: $my-border-radius;
+}
+.room-service-tag {
+  background: $main;
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+/* 個人資料 */
+.profile-form {
+  background: $secondary;
+  border-radius: $my-border-radius;
+}
+.profile-form label {
+  margin-bottom: 0.5rem;
+}
+/* 特殊需求 */
+.memo-form {
+  background: $secondary;
+  border-radius: $my-border-radius;
+}
+/* 抵達時間 */
+.arrive-time {
+  background: $secondary;
+  border-radius: $my-border-radius;
+}

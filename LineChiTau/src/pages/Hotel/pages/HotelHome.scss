@@ -1,0 +1,13 @@
+@import '../../../css/global-style.scss';
+
+.banner {
+  background: url('../img/banner.jpeg') no-repeat center / cover;
+  height: 60vh;
+  .banner-search-bar {
+    background-color: rgba(#fcfaf2, 0.8);
+    max-height: 90px;
+    padding: 15px;
+    top: 50%;
+    left: calc(50% - 400px);
+  }
+}

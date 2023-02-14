@@ -1,0 +1,21 @@
+@import '../../src/css/global-style.scss';
+@import 'material-symbols';
+.token {
+  position: relative;
+  .btn-token {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: 45%;
+    left: 47.5%;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffb905;
+    color: #734338;
+  }
+  .img-token {
+    width: 1900px;
+    height: 750px;
+    
+  }
+}

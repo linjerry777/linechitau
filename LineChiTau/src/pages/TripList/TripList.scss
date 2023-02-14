@@ -1,0 +1,26 @@
+@import "../../css/global-style.scss";
+
+.page-wrapper {
+  background: white;
+
+  .top-sort-list {
+    line-height: 28px;
+    .top-sort-btn+.top-sort-btn {
+      padding-inline:10px;  
+      border-left:1px solid $textColor;
+
+      span {
+        vertical-align: bottom;
+      }
+    }
+  }
+  
+  .filter-container {
+    border: 1px solid $textColor;
+    max-width: 250px;
+    .filter-box-title {
+      border-bottom: 2px solid $textColor;
+      padding-bottom: 5px;
+    }
+  }
+}
